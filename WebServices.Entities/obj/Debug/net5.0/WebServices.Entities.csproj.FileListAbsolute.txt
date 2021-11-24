@@ -40,6 +40,7 @@ C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\bin\Debug
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\bin\Debug\net5.0\WebServices.Entities.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\bin\Debug\net5.0\ref\WebServices.Entities.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\bin\Debug\net5.0\WebServices.Entities.pdb
+C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\obj\Debug\net5.0\WebServices.Entities.csproj.AssemblyReference.cache
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\obj\Debug\net5.0\WebServices.Entities.GeneratedMSBuildEditorConfig.editorconfig
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\obj\Debug\net5.0\WebServices.Entities.AssemblyInfoInputs.cache
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Entities\obj\Debug\net5.0\WebServices.Entities.AssemblyInfo.cs

@@ -38,11 +38,7 @@ namespace WebServices.Application.Contracts
                 if (deserializeJsonResult.Count > 0)
                 {
                     _rate.DeleteAll();
-                    foreach (var item in deserializeJsonResult)
-                    {
-                        _rate.Save(item);
-                    }
-
+                    deserializeJsonResult.ForEach(item => {_rate.Save(item);});
                     Log.Information("RateService, Method: GetAllRates, Se inserta en la BBDD local el listado de tarifas obtenido desde el webService y se retorna el listado de tarifas.");
                     return deserializeJsonResult;
                 }

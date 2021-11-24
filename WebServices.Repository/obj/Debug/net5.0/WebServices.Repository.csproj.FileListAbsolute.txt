@@ -72,7 +72,6 @@ C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Deb
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\WebServices.Repository.AssemblyInfoInputs.cache
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\WebServices.Repository.AssemblyInfo.cs
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\WebServices.Repository.csproj.CoreCompileInputs.cache
-C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\WebServices.Repository.csproj.CopyComplete
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\WebServices.Repository.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\ref\WebServices.Repository.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Repository\obj\Debug\net5.0\WebServices.Repository.pdb

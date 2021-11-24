@@ -74,7 +74,6 @@ C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Deb
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\WebServices.DataAccess.AssemblyInfoInputs.cache
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\WebServices.DataAccess.AssemblyInfo.cs
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\WebServices.DataAccess.csproj.CoreCompileInputs.cache
-C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\WebServices.DataAccess.csproj.CopyComplete
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\WebServices.DataAccess.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\ref\WebServices.DataAccess.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.DataAccess\obj\Debug\net5.0\WebServices.DataAccess.pdb

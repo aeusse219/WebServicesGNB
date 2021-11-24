@@ -26,7 +26,6 @@ namespace WebServices.Application
             _configuration = configuration;
         }
 
-        //Method that allows get the list of Transactions
         public IList<Transaction> GetAllTransactions()
         {
             try
@@ -38,24 +37,18 @@ namespace WebServices.Application
                 Stream stream = result.GetResponseStream();
                 var reader = new StreamReader(stream);
                 string jsonresult = reader.ReadToEnd();
-                var deserializeJsonResult = JsonConvert.DeserializeObject<IList<Transaction>>(jsonresult);
+                var deserializeJsonResult = JsonConvert.DeserializeObject<List<Transaction>>(jsonresult);
 
                 if (deserializeJsonResult.Count > 0)
                 {
                     _transaction.DeleteAll();
-
-                    foreach (var item in deserializeJsonResult)
-                    {
-                        _transaction.Save(item);
-                    }
-
+                    deserializeJsonResult.ForEach(item => {_transaction.Save(item);});
                     Log.Information("TransactionService, Method: GetAllTransactions, Se inserta en la BBDD local el listado de tarifas obtenido desde el webService y se retorna el listado de tarifas.");
                     return deserializeJsonResult;
                 }
                 else
                 {
                     var transactions = _transaction.GetAll();
-
                     Log.Warning("TransactionService, Method: GetAllTransactions, Se consulta el listado de tarifas desde la BBDD Local, ya que no se obtieron registros desde el WebService.");
                     return transactions.ToList();
                 }
@@ -63,13 +56,11 @@ namespace WebServices.Application
             catch (Exception ex)
             {
                 var transactions = _transaction.GetAll();
-
                 Log.Error("TransactionService, Method: GetAllTransactions, Se consulta el listado de tarifas desde la BBDD Local, ya que el WebService esta fallando. " + ex.Message);
                 return transactions.ToList();
             }
         }
 
-        //Method that allows get the list of transactions by filter SKU
         public IList<TransactionBySkuDto> GetTransactionBySKU(string sku)
         {
             var resultTransactionFilterSKU = new List<TransactionBySkuDto>();
@@ -82,29 +73,20 @@ namespace WebServices.Application
                 {
                     var listTransactionByFilterSKU = new List<TransactionDto>();
                     var listRates = ValidatedRates(to, filterSKUTransactions);
-
-                    foreach (var item in filterSKUTransactions)
+                    filterSKUTransactions.ForEach(item =>
                     {
                         var rateEUR = listRates.FirstOrDefault(x => x.From == item.Currency && x.To == to);
-
                         if (item.Currency == to)
-                        {
                             listTransactionByFilterSKU.Add(new TransactionDto { Sku = item.Sku, Amount = decimal.Round(item.Amount, 2), Currency = item.Currency });
-                        }
                         else
-                        {
                             listTransactionByFilterSKU.Add(new TransactionDto { Sku = item.Sku, Amount = decimal.Round(item.Amount * rateEUR.rate, 2), Currency = rateEUR.To });
-                        }
-                    }
+                    });
                     resultTransactionFilterSKU.Add(new TransactionBySkuDto { ListTransactions = listTransactionByFilterSKU, TotalAmount = decimal.Round(listTransactionByFilterSKU.Sum(s => s.Amount), 2) });
-
                     Log.Warning("TransactionService, Method: GetTransactionBySKU, Se retorna el listado de transaciones filtradas por el SKU: " + sku + " y la suma total en EUR");
                     return resultTransactionFilterSKU;
                 }
-
                 Log.Information("TransactionService, Method: GetTransactionBySKU, No hay transaciones asociadas al sku: " + sku + ", enviado.");
                 return resultTransactionFilterSKU;
-
             }
             catch (Exception ex)
             {
@@ -113,7 +95,6 @@ namespace WebServices.Application
             }
         }
 
-        //Method to validated rates
         public IList<Rate> ValidatedRates(string to, IList<Transaction> ListTransactionByFilterSKU)
         {
             var listRates = _rate.GetAll();
@@ -128,16 +109,15 @@ namespace WebServices.Application
                 }
 
                 var groupByListCurrency = ListTransactionByFilterSKU.Where(x => x.Currency != to).GroupBy(g => g.Currency).ToList();
-
-                foreach (var from in groupByListCurrency.Select(x => x.Key))
+                groupByListCurrency.ForEach(item =>
                 {
-                    var rateEUR = listRates.FirstOrDefault(x => x.From == from && x.To == to);
+                    var rateEUR = listRates.FirstOrDefault(x => x.From == item.Key && x.To == to);
                     if (rateEUR == null)
                     {
-                        var calculeRate = CalculeRate(from, to, listRates);
+                        var calculeRate = CalculeRate(item.Key, to, listRates);
                         listRates.Add(new Rate { From = calculeRate.From, To = calculeRate.To, rate = decimal.Round(calculeRate.rate, 2) });
                     }
-                }
+                });
             }
             catch (Exception ex)
             {
@@ -147,16 +127,13 @@ namespace WebServices.Application
             return listRates;
         }
 
-        //Method to calculate auto currency conversion EUR
         public Rate CalculeRate(string from, string to, IList<Rate> ListRates)
         {
             var listConversionFrom = ListRates.Where(x => x.From == from).ToList();
             var listConversionTo = ListRates.Where(x => listConversionFrom.Select(y => y.To).Contains(x.From) && x.To == to).ToList();
             decimal resultRate = 0;
             if (listConversionTo.Any())
-            {
                 resultRate = listConversionFrom.FirstOrDefault(x => listConversionTo.Select(y => y.From).Contains(x.To)).rate * listConversionTo.FirstOrDefault(x => listConversionFrom.Select(y => y.To).Contains(x.From)).rate;
-            }
 
             Log.Information("TransactionService, Method: CalculeRate, Ingreso al metodo de CalculeRate para calcular de " + from + " a " + to);
             return (new Rate { From = from, To = to, rate = resultRate });

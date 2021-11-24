@@ -38,6 +38,7 @@ C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\bin\D
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\bin\Debug\net5.0\WebServices.Abstractions.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\bin\Debug\net5.0\ref\WebServices.Abstractions.dll
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\bin\Debug\net5.0\WebServices.Abstractions.pdb
+C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\obj\Debug\net5.0\WebServices.Abstractions.csproj.AssemblyReference.cache
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\obj\Debug\net5.0\WebServices.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\obj\Debug\net5.0\WebServices.Abstractions.AssemblyInfoInputs.cache
 C:\Proyectos\PRUEBA VUELING VERSIONES\WebServices\WebServices.Abstractions\obj\Debug\net5.0\WebServices.Abstractions.AssemblyInfo.cs
