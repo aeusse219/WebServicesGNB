@@ -3,7 +3,7 @@ using WebServices.Entities.Models;
 
 namespace WebServices.Application.Contracts
 {
-    public interface IRateApplication
+    public interface IRateService
     {
         IList<Rate> GetAllRates();
     }

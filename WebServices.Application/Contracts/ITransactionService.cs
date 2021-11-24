@@ -4,10 +4,10 @@ using WebServices.Entities.Models;
 
 namespace WebServices.Application.Contracts
 {
-    public interface ITransactionApplication
+    public interface ITransactionService
     {
         IList<Transaction> GetAllTransactions();
-        IList<TransactionBySkuDTO> GetListTransactionBySKU(string sku);
+        IList<TransactionBySkuDto> GetTransactionBySKU(string sku);
         IList<Rate> ValidatedRates(string to, IList<Transaction> ListTransactionByFilterSKU);
         Rate CalculeRate(string from, string to, IList<Rate> ListRates);
     }

@@ -25,10 +25,6 @@ namespace WebServices.DataAccess
         {
             return _items.ToList();
         }
-        public TEntity GetById(int id)
-        {
-            return _items.Where(x => x.Id.Equals(id)).FirstOrDefault();
-        }
         public void DeleteAll()
         {
             _connectionContext.Set<TEntity>().RemoveRange(_connectionContext.Set<TEntity>());

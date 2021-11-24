@@ -25,14 +25,14 @@ namespace WebServices.API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("from")
+                    b.Property<string>("From")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("To")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("rate")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("to")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -46,13 +46,13 @@ namespace WebServices.API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("amount")
+                    b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("currency")
+                    b.Property<string>("Currency")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("sku")
+                    b.Property<string>("Sku")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

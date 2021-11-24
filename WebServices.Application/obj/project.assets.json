@@ -5458,11 +5458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Application\\WebServices.Application.csproj",
+      "projectUniqueName": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Application\\WebServices.Application.csproj",
       "projectName": "WebServices.Application",
-      "projectPath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Application\\WebServices.Application.csproj",
+      "projectPath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Application\\WebServices.Application.csproj",
       "packagesPath": "C:\\Users\\NEWSHORE_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Application\\obj\\",
+      "outputPath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5485,8 +5485,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Repository\\WebServices.Repository.csproj": {
-              "projectPath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Repository\\WebServices.Repository.csproj"
+            "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Repository\\WebServices.Repository.csproj": {
+              "projectPath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Repository\\WebServices.Repository.csproj"
             }
           }
         }

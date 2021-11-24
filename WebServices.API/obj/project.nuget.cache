@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qVGtDGhXtBgZVHjbHFPq3OGWjbbj90fWPDDn9YyI5B+T+a+NEirwH/TxWrfq6Gn9mfn+05r3HEN5an/mURNOIA==",
+  "dgSpecHash": "h1S4nfV8bj2w9HmylAFRZLHBFI+vSfx+CwRXVs2sOV+CaTBMUr9+v9VkLTQ5TG5rTbN6qFdWxTeuaEY2urhy3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.API\\WebServices.API.csproj",
+  "projectFilePath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.API\\WebServices.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NEWSHORE_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NEWSHORE_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

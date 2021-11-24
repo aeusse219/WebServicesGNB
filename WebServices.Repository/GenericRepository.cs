@@ -17,7 +17,7 @@ namespace WebServices.Repository
         {
             return _DBContext.Save(entity);
         }
-        IList<TEntity> IGenericCrudAbtractions<TEntity>.GetAll()
+        public IList<TEntity> GetAll()
         {
             return _DBContext.GetAll();
         }

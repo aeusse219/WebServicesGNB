@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S4w8UQ+3XWyNCf5DeWtojl1n0TqPbtAEAH2rHXSMQ/EwbGG9jkA0vIziCAXSPlHIDPmWs0Te+LsMmUMPogEqOg==",
+  "dgSpecHash": "QSvgGXvnPPz4JmKN7z/vCZNy43ODH+GMNYsyoWAxWEuGIO/9zj9ZybJp7rEzMwTcnIyWWjukuGbtkEwDYhW/pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Repository\\WebServices.Repository.csproj",
+  "projectFilePath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Repository\\WebServices.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NEWSHORE_\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\NEWSHORE_\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

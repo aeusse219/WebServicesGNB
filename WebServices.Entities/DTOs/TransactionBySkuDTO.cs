@@ -2,9 +2,9 @@
 
 namespace WebServices.Entities.DTOs
 {
-    public class TransactionBySkuDTO
+    public class TransactionBySkuDto
     {
         public decimal TotalAmount { get; set; }
-        public List<TransactionDTO> ListTransactions { get; set; }
+        public List<TransactionDto> ListTransactions { get; set; }
     }
 }

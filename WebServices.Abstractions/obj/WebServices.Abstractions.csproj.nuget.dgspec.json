@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj": {}
+    "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj": {
+    "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj",
+        "projectUniqueName": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj",
         "projectName": "WebServices.Abstractions",
-        "projectPath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj",
+        "projectPath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Abstractions\\WebServices.Abstractions.csproj",
         "packagesPath": "C:\\Users\\NEWSHORE_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.Abstractions\\obj\\",
+        "outputPath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

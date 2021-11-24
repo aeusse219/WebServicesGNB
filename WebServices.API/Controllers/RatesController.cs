@@ -7,8 +7,8 @@ namespace WebServices.API.Controllers
     [ApiController]
     public class RatesController : ControllerBase
     {
-        private readonly IRateApplication _rate;
-        public RatesController(IRateApplication rate)
+        private readonly IRateService _rate;
+        public RatesController(IRateService rate)
         {
             _rate = rate;
         }

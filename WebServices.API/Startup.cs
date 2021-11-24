@@ -41,10 +41,10 @@ namespace WebServices.API
             x=> x.MigrationsAssembly("WebServices.API")));
 
             //When you require an object of type IRateApplication, an instance of the object of type RateApplication will be created
-            services.AddScoped(typeof(IRateApplication), typeof(RateAplication));
+            services.AddScoped(typeof(IRateService), typeof(RateService));
 
             //When you require an object of type ITransactionApplication, an instance of the object of type TransactionApplication will be created
-            services.AddScoped(typeof(ITransactionApplication), typeof(TransactionApplication));
+            services.AddScoped(typeof(ITransactionService), typeof(TransactionService));
 
             //When you require an object of type IGenericRepository, an instance of the object of type GenericRepository will be created
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));

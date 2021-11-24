@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fq5FwrHYb2+hMb0VOSgPmcPYxJirrmXCFsu4Dk23AtBxRryrat8wXtHzoR2MA6REfFpgaz/R9C/C64zZGjtwPQ==",
+  "dgSpecHash": "zm4Qd/9JV4nx4UTO8Dkvrve7wdqer0OglCqbdA7+PonwMpDE0uiSfBLNcPFhZgAUckxL6+HpLCqs9cUTSSL+yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NEWSHORE_\\OneDrive - Newshore\\Newshore\\WebServices\\WebServices.DataAccess\\WebServices.DataAccess.csproj",
+  "projectFilePath": "C:\\Proyectos\\PRUEBA VUELING VERSIONES\\WebServices\\WebServices.DataAccess\\WebServices.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NEWSHORE_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NEWSHORE_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

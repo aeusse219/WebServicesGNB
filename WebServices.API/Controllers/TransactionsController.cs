@@ -7,8 +7,8 @@ namespace WebServices.API.Controllers
     [ApiController]
     public class TransactionsController : ControllerBase
     {
-        private readonly ITransactionApplication _transaction;
-        public TransactionsController(ITransactionApplication transaction)
+        private readonly ITransactionService _transaction;
+        public TransactionsController(ITransactionService transaction)
         {
             _transaction = transaction;
         }
@@ -20,10 +20,10 @@ namespace WebServices.API.Controllers
         }
 
         [HttpGet]
-        [Route("api/GetListTransactionBySKU/{sku}")]
-        public IActionResult GetListTransactionBySKU(string sku)
+        [Route("api/GetTransactionBySKU/{sku}")]
+        public IActionResult GetTransactionBySKU(string sku)
         {
-            return Ok(_transaction.GetListTransactionBySKU(sku));
+            return Ok(_transaction.GetTransactionBySKU(sku));
         }
     }
 }

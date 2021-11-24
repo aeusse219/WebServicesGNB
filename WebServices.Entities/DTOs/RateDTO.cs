@@ -1,9 +1,9 @@
 ﻿namespace WebServices.Entities.DTOs
 {
-    public class RateDTO
+    public class RateDto
     {
-        public string from { get; set; }
-        public string to { get; set; }
+        public string From { get; set; }
+        public string To { get; set; }
         public decimal rate { get; set; }
     }
 }

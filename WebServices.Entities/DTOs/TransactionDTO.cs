@@ -1,9 +1,9 @@
 ﻿namespace WebServices.Entities.DTOs
 {
-    public class TransactionDTO
+    public class TransactionDto
     {
-        public string sku { get; set; }
-        public decimal amount { get; set; }
-        public string currency { get; set; }
+        public string Sku { get; set; }
+        public decimal Amount { get; set; }
+        public string Currency { get; set; }
     }
 }
